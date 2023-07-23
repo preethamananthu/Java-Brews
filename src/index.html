@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Java brews</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="icon" type="image/x-icon" href="mug-hot-solid.svg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link href="output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!-- --------------------------------------NAV BAR---------------------------------------------- -->
+    <header class="container py-5  lg:px-40 sm:px-12 flex justify-between items-center mx-auto">
+        <img src="Java brews.png" alt="logo" class="w-24">
+        <nav class="hidden lg:block">
+            <ul class="flex gap-20 md:gap10 text-xl font-normal text-neutral-500">
+                <li><a href="/" class="hover:text-neutral-800">Home</a></li>
+                <li><a href="/" class="hover:text-neutral-800">Products</a></li>
+                <li><a href="/" class="hover:text-neutral-800">About us</a></li>
+            </ul>
+        </nav>
+        <div class="user-btns">
+            <ul class="flex gap-10">
+                <li><a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li><a href=""><i class="fa-solid fa-user"></i></a></li>
+            </ul>
+        </div>
+    </header>
+    <hr>
+
+
+
+<!-- ----------------------------------------HERO---------------------------------------------------- -->
+    <section class="hero container py-16 lg:px-40 sm:px-12 mx-auto">
+        <!-- <div class="grid grid-cols-2 gap-10 items-center font-semibold"> -->
+        <div class="lg:flex justify-between gap-10 items-center mx-auto">
+            <div class="lg:pr-5  lg:text-left text-center">
+                <p class="text-6xl mb-5 font-serif font-semibold">Unleash the Aroma<br/>of exceptional<br/>coffee.</p>
+                <p class="text-md text-neutral-500 mb-12">Step into our world of exceptional coffee and indulge in the rich flavours<br/>and enticing aromas that only the finest beans can offer.</p>
+                <a href="" class="items-center bg-indigo-500 text-white py-2 px-4 rounded-lg text-xl font-medium">Explore<i class="fa-solid fa-arrow-right pl-2 font-regular"></i></a>
+            </div>
+            <img class="w-88 rounded-full aspect-square object-cover mx-auto sm:mt-12 lg:m-0" src="https://images.unsplash.com/photo-1610478506025-8110cc8f1986?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80" alt="">
+        </div>
+    </section>
+    <hr>
+
+
+    <!-- -----------------------------------------SECTION------------------------------------------------- -->
+    <section class="container py-16 lg:px-40 sm:px-12 mx-auto">
+        <h1 class="text-2xl font-bold mb-5">Shop our products: </h1>
+
+        <div class="grid lg:grid-cols-3 gap-8 md:grid-rows-3">
+            <div class="robusta rounded-lg border-2 lg:p-2 sm:p-4 flex flex-col justify-between h-">
+                <img class="rounded-t-md" src="https://images.unsplash.com/photo-1590093238248-58c3f26bec48?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="">
+                <div class="text flex justify-between">
+                    <div class="left pr-8">
+                        <h1 class="text-2xl font-bold">Robusta</h1>
+                        <p class="text-sm font-medium text-neutral-500">Low acidity and high bitterness, often with a distinct woody and nutty taste.</p>
+                    </div>
+                    <div class="right">
+                        <h1 class="flex items-center font-semibold text-2xl ">$10<sup class="text-xs font-semibold">99</sup></h1>
+                    </div>
+                </div>
+                
+                <button class="bg-indigo-500 py-1.5 px-10 text-center text-white text-lg rounded-lg w-full bottom-0">Add to Cart</button>
+            </div>
+            
+        
+            
+            <div class="robusta rounded-lg lg:p-2 sm:p-4 border-2 flex flex-col justify-between">
+                <img class="rounded-t-md" src="https://images.unsplash.com/photo-1590093238248-58c3f26bec48?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="">
+                <div class="text flex justify-between">
+                    <div class="left pr-8">
+                        <h1 class="text-2xl font-bold">Arabica</h1>
+                        <p class="text-sm font-medium text-neutral-500">Sweet flavour, with hints of chocolate, nuts, and caramel. You may also notice hints of fruit and berries.</p>
+                    </div>
+                    <div class="right">
+                        <h1 class="flex items-center font-semibold text-2xl ">$8<sup class="text-xs font-semibold">99</sup></h1>
+                    </div>
+                </div>
+                
+                <button class="bg-indigo-500 py-1.5 px-10 text-center text-white text-lg rounded-lg w-full">Add to Cart</button>
+            </div>
+            
+            
+            <div class="robusta rounded-lg lg:p-2 sm:p-4 border-2 flex flex-col justify-between">
+                <img class="rounded-t-md" src="https://images.unsplash.com/photo-1590093238248-58c3f26bec48?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="">
+                <div class="text flex justify-between">
+                    <div class="left pr-8">
+                        <h1 class="text-2xl font-bold">Dark Roast</h1>
+                        <p class="text-sm font-medium text-neutral-500">Bittersweet or toasty taste, as well as decadent chocolaty flavour.</p>
+                    </div>
+                    <div class="right">
+                        <h1 class="flex items-center font-semibold text-2xl ">$12<sup class="text-xs font-semibold" >99</sup></h1>
+                    </div>
+                </div>
+                
+                <button class="bg-indigo-500 py-1.5 px-10 text-center text-white text-lg rounded-lg w-full">Add to Cart</button>
+            </div>
+            
+            
+        </div>
+    </section>
+</body>
+</html>
