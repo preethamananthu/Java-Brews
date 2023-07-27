@@ -13,12 +13,12 @@
 <body>
 
     <!-- --------------------------------------NAV BAR---------------------------------------------- -->
-    <header class="container py-5  lg:px-40 px-12 flex justify-between items-center mx-auto">
-        <img src="Java brews.png" alt="logo" class="w-24">
+    <header class="container py-5 px-12 lg:px-40 flex justify-between items-center mx-auto sticky top-0 bg-white" id="nav">
+        <a href="#nav"><img src="Java brews.png" alt="logo" class="w-24"></a>
         <nav class="hidden lg:block">
             <ul class="flex gap-20 md:gap10 text-xl font-normal text-neutral-500">
-                <li><a href="/" class="hover:text-neutral-800">Home</a></li>
-                <li><a href="/" class="hover:text-neutral-800">Products</a></li>
+                <li><a href="#nav" class="hover:text-neutral-800">Home</a></li>
+                <li><a href="#products" class="hover:text-neutral-800">Products</a></li>
                 <li><a href="/" class="hover:text-neutral-800">About us</a></li>
             </ul>
         </nav>
@@ -34,22 +34,22 @@
 
 
 <!-- ----------------------------------------HERO---------------------------------------------------- -->
-    <section class="hero container py-16 lg:px-40 sm:px-12 mx-auto">
+    <section class="hero container py-16 lg:px-40 sm:px-12 mx-auto" id="hero">
         <!-- <div class="grid grid-cols-2 gap-10 items-center font-semibold"> -->
         <div class="lg:flex justify-between gap-10 items-center mx-auto">
             <div class="lg:pr-5  lg:text-left text-center">
-                <p class="md:text-6xl sm:text-4xl mb-5 font-serif font-semibold">Unleash the Aroma<br/>of exceptional<br/>coffee.</p>
+                <p class="md:text-6xl text-4xl mb-5 font-serif font-semibold">Unleash the Aroma<br/>of exceptional<br/>coffee.</p>
                 <p class="text-md text-neutral-500 mb-8">Step into our world of exceptional coffee and indulge in the rich flavours<br/>and enticing aromas that only the finest beans can offer.</p>
                 <a href="#products" class="items-center bg-indigo-500 hover:bg-indigo-600 text-white py-2 px-4 rounded-lg text-xl font-medium">Explore<i class="fa-solid fa-arrow-right pl-2 font-regular"></i></a>
             </div>
-            <img class="w-88 rounded-full aspect-square object-cover mx-auto sm:mt-12 lg:m-0" src="https://images.unsplash.com/photo-1610478506025-8110cc8f1986?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80" alt="">
+            <img class="rounded-full aspect-square object-cover mx-auto mt-12 lg:m-0" src="https://images.unsplash.com/photo-1610478506025-8110cc8f1986?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80" alt="">
         </div>
     </section>
     <hr>
 
 
     <!-- -----------------------------------------SECTION------------------------------------------------- -->
-    <section class="container py-16 lg:px-40 px-12 mx-auto" id="products">
+    <section class="container py-16 lg:px-40 px-12 mx-auto h-screen" id="products">
         <h1 class="text-3xl font-bold mb-5 font-serif">Shop our products: </h1>
 
         <div class="grid md:grid-cols-3 gap-8 ">
@@ -102,9 +102,42 @@
                 
                 <button class="bg-indigo-500 hover:bg-indigo-600 py-1.5 px-10 text-center text-white text-lg rounded-lg w-full">Add to Cart</button>
             </div>
-            
-            
         </div>
     </section>
+
+
+    <!-- -------------------CONTENT--------------- -->
+    <section class="container py-16 lg:px-40 px-12 mx-auto h-screen" >
+
+    </section>
+
+
+    <!-- ----------------FOOTER----------------- -->
+
+    <footer class="container px-12 lg:px-40 bg-neutral-100 pb-4">
+        <div class="lg:flex justify-around text-neutral-500">
+            <div class="socials">
+                <p class="text-neutral-800 my-3 text-lg">Connect with us:</p>
+                <ul>
+                    <li class="list-none pb-2"><a href="www.twitter.com/preethamananthu" class="hover:text-neutral-800"><i class="fa-brands fa-twitter pr-5"></i>Twitter</a></li>
+                    <li class="list-none pb-2"><a href="www.twitter.com/preethamananthu" class="hover:text-neutral-800"><i class="fa-brands fa-facebook pr-5"></i>Facebook</a></li>
+                    <li class="list-none pb-2"><a href="www.instagram.com/preethamananthu" class="hover:text-neutral-800"><i class="fa-brands fa-instagram pr-5"></i>Instagram</a></li>
+                    <li class="list-none pb-2"><a href="www.instagram.com/preethamananthu" class="hover:text-neutral-800"><i class="fa-brands fa-youtube pr-5"></i>Youtube</a></li>
+                </ul>
+            </div>
+            <div class="more">
+                <p class="text-neutral-800 my-3 text-lg">More</p>
+                <ul>
+                    <li class="list-none pb-2"><a href="" class="hover:text-neutral-800">About</a></li>
+                    <li class="list-none pb-2"><a href="" class="hover:text-neutral-800">Careers</a></li>
+                </ul>
+            </div>
+            <div class="newsletter items-center my-3">
+                <input type="text" class="p-2 rounded-md" placeholder="Enter Email">
+                <button class="p-2 bg-indigo-500 rounded-md text-white hover:bg-indigo-600">Go</button>
+                <h1 class="text-2xl mt-3 text-neutral-800">Subsribe to our newsletter!</h1>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
